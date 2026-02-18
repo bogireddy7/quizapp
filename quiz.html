@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Quiz App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Start Screen -->
+    <div id="start-screen" class="screen active">
+        <h1>Ultimate Quiz App</h1>
+
+        <select id="category">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+
+        <div class="top-bar">
+            <div id="progress-text">Question 1 of 5</div>
+            <div id="timer">15</div>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress-fill"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="answers" class="answers"></div>
+
+        <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result-screen" class="screen">
+        <h2>Your Score</h2>
+        <p id="score-text"></p>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
